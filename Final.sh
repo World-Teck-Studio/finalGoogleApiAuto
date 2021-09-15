@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-if (whiptail --title "Téléchargement des outils" --msgbox "Avant de commencé l'installation, le logiciel vas télécharger les outils.\n \n\n Temps: entre 1 et 15 min \n\n Mode: Full automatique" 12 78) then 
+if (whiptail --title "Téléchargement des outils" --msgbox "Avant de commencé l'installation, le logiciel vas télécharger les outils.\n \n\n Temps: entre 1 et 5min \n\n Mode: Full automatique" 12 78) then 
 wget https://github.com/googlesamples/assistant-sdk-python/releases/download/0.6.0/google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
 clear
 whiptail  --title "World-Teck STUDIO (TUTO Assistant Gooogle) " --msgbox "\n Bienvenue sur l'assistance d'installation de google sur Raspberry.\n\n\n Information sur les installations :\n\n\n - Configuration du compte API de google via internet \n - Vérification de la mise à jour de votre logiciel \n - Votre matériel a branché.\n - Téléchargement + installation de pythons\n - Installation de google assistance\n - Activation du service\n - Exécution de google assistance\n\n\n Niveau de difficulté de l'instalation : Moyen \n\n Version: 5.0 Final " 30 85
