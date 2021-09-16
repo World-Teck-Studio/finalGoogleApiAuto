@@ -31,6 +31,7 @@ clear
 whiptail --title "ETAPE 3" --msgbox "Félicitation, vous avez terminé l'étape 3 \n\n Nous pouvons passer à l'étape 4" 10 78
 whiptail --title "ETAPE 4" --msgbox "Configuration du fichier audio\n------------------------------\n\n 1.préparer le numero de votre device \n 2.Préparer le numero de votre card \n\n ATTENTION: une fois le fichier modifié faites CTRL Gauche + X puis ENTER" 10 78
 sudo nano .asoundrc
+clear
 whiptail --title "ETAPE 4" --msgbox "Félicitation, vous avez terminé l'étape 4 \n\n Nous pouvons passer à l'étape 5" 10 78
 whiptail --title "ETAPE 5" --msgbox "Téléchargement + installation de python \n---------------------------------------\n\n Temps: 10 et 25 minutes \n\n Mode: Full Automatique" 12 78
 sudo apt-get install python3-dev python3-venv -y
@@ -38,6 +39,7 @@ python3 -m venv env
 env/bin/python -m pip install --upgrade pip setuptools wheel
 source env/bin/activate
 sudo apt-get install portaudio19-dev libffi-dev libssl-dev -y
+clear
 whiptail --title "ETAPE 5" --msgbox "Téléchargement + installation de python \n---------------------------------------\n\n Information: Terminer \n\n Vous pouvez passer à l'étape 5" 12 78
 whiptail --title "ETAPE 6" --msgbox "Installation de google assistance\n---------------------------------\n\n Temps: 10 et 25 minutes \n\n Mode: Full Automatique" 12 78
 python -m pip install --upgrade google-assistant-sdk[samples]
@@ -56,6 +58,7 @@ clear
 whiptail --title "ETAPE 8 FINAL" --msgbox "Mise en place du lancement automatique\n------------------------------------\n\n 1. sourligner les 2 phrases \n\n source env/bin/activate \n google-assistant-demo --device-model-id my-device-model \n\n faite OK\n RDV en bas de la fenêtre et faites click Droit\n Puis CTRL+X --> ENTER" 17 78
 clear
 nano /home/pi/.bashrc
+clear
 whiptail --title "Félicitation" --msgbox "L'installation de google assitance est TERMINER\n---------------------------------\n\n Félicitation, le software est correctement installé \n\n il reste plus qu'à faire OK et attendre le restart." 12 78
 whiptail --title "== SCRIPT DE WORLD-TECK STUDIO ==" --msgbox "Merci d'avoir suivi le tuto\n\n Retrouvez moi sur \n YOUTUBE: world-teck STUDIO \n TWITCH: WorldTeck_studio_ ==" 12 78
 clear
