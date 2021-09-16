@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if (whiptail --title "Téléchargement des outils" --msgbox "Avant de commencer l'installation, le logiciel va télécharger les outils.\n \n\n Temps: entre 1 et 5min \n\n Mode: Full automatique" 12 78) then 
+if (whiptail --title "Téléchargement des outils" --msgbox "Avant de commencer l'installation, le logiciel va télécharger les outils.\n \n\n Temps: entre 1 et 2min \n\n Mode: Full automatique" 12 78) then 
 wget https://github.com/googlesamples/assistant-sdk-python/releases/download/0.6.0/google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
 clear
 cd /home/pi/finalGoogleApiAuto/
@@ -15,7 +15,7 @@ whiptail  --title "World-Teck STUDIO (TUTO Assistance Gooogle) " --msgbox "\n Bi
 whiptail --title "ETAPE 1" --msgbox "Configuration du compte API de google via internet\n-------------------------------------------------\n\n Temps: entre 5 et 15 min \n\n Mode: Full Manuel" 12 78
 whiptail --title "ETAPE 1" --msgbox "ATTENTION, MERCI DE BIEN SUIVRE LES ETAPES\n\n1.Rdv sur console.cloud.google.com/projectselector2\n2.Clicker sur créer un projet\n3.Entrer un nom de projet puis créer\n4.Activer Google assistant API\n5.Créer un ID client OAuth\n\nTemps: entre 5 et 10 min \n\n Mode: Full Manuel" 15 78
 whiptail --title "ETAPE 1" --msgbox "Félicitation, vous avez terminé l'étape 1 \n\nNous pouvons passer à l'étape 2" 10 78
-whiptail --title "ETAPE 2" --msgbox "Vérification de la mise à jour de votre logiciel \n------------------------------------------------\n\n Temps: entre 10 et 30 min \n\n Mode: Full Auto" 12 78
+whiptail --title "ETAPE 2" --msgbox "Vérification de la mise à jour de votre logiciel \n------------------------------------------------\n\n Temps: entre 10min et 1H \n\n Mode: Full Auto" 12 78
 sudo apt-get update -y && sudo apt-get upgrade -y
 clear
 whiptail --title "ETAPE 2" --msgbox "Vérification de la mise à jour de votre logiciel \n------------------------------------------------\n\n Information: TERMINER \n\n Vous pouvez passer à l'étape 3" 12 78
