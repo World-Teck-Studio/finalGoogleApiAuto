@@ -4,10 +4,10 @@ if (whiptail --title "Téléchargement des outils" --msgbox "Avant de commencer 
 wget https://github.com/googlesamples/assistant-sdk-python/releases/download/0.6.0/google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
 clear
 cd /home/pi/finalGoogleApiAuto/
-mv .asoundrc /home/pi/
+sudo mv .asoundrc /home/pi/
 clear
 cd /home/pi/finalGoogleApiAuto/
-mv override.conf /etc/systemd/system/getty@tty1.service.d
+sudo mv override.conf /etc/systemd/system/getty@tty1.service.d
 cd
 clear
 cd /home/pi/
