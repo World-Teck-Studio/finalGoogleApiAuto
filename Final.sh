@@ -39,7 +39,7 @@ env/bin/python -m pip install --upgrade pip setuptools wheel
 source env/bin/activate
 sudo apt-get install portaudio19-dev libffi-dev libssl-dev -y
 clear
-whiptail --title "ETAPE 5" --msgbox "Téléchargement + installation de python \n---------------------------------------\n\n Information: Terminer \n\n Vous pouvez passer à l'étape 5" 12 78
+whiptail --title "ETAPE 5" --msgbox "Téléchargement + installation de python \n---------------------------------------\n\n Information: Terminer \n\n Vous pouvez passer à l'étape 6" 12 78
 whiptail --title "ETAPE 6" --msgbox "Installation de google assistance\n---------------------------------\n\n Temps: 10 et 25 minutes \n\n Mode: Full Automatique" 12 78
 sudo python -m pip install --upgrade google-assistant-sdk[samples]
 clear
