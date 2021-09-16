@@ -11,7 +11,10 @@ cd /home/pi/finalGoogleApiAuto/
 sudo mv override.conf /etc/systemd/system/getty@tty1.service.d
 cd
 clear
+cd /home/pi/finalGoogleApiAuto/
+mv google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl /home/pi/
 cd /home/pi/
+clear
 whiptail  --title "World-Teck STUDIO (TUTO Assistance Gooogle) " --msgbox "\n Bienvenue sur l'assistance d'installation de google sur Raspberry.\n\n\n Information sur les installations :\n\n\n - Configuration du compte API de google via internet \n - Vérification de la mise à jour de votre logiciel \n - Check du matériel.\n - Téléchargement + installation de pythons\n - Installation de google assistance\n - Activation du service\n - Mise en place du mode auto\n - Exécution de google assistance\n\n\n Niveau de difficulté de l'instalation : Moyen \n\n Version: 5.0 Final " 32 85
 whiptail --title "ETAPE 1" --msgbox "Configuration du compte API de google via internet\n-------------------------------------------------\n\n Temps: entre 5 et 15 min \n\n Mode: Full Manuel" 12 78
 whiptail --title "ETAPE 1" --msgbox "ATTENTION, MERCI DE BIEN SUIVRE LES ETAPES\n\n1.Rdv sur console.cloud.google.com/projectselector2\n2.Clicker sur créer un projet\n3.Entrer un nom de projet puis créer\n4.Activer Google assistant API\n5.Créer un ID client OAuth\n\nTemps: entre 5 et 10 min \n\n Mode: Full Manuel" 15 78
@@ -41,7 +44,7 @@ sudo apt-get install portaudio19-dev libffi-dev libssl-dev -y
 clear
 whiptail --title "ETAPE 5" --msgbox "Téléchargement + installation de python \n---------------------------------------\n\n Information: Terminer \n\n Vous pouvez passer à l'étape 6" 12 78
 whiptail --title "ETAPE 6" --msgbox "Installation de google assistance\n---------------------------------\n\n Temps: 10 et 25 minutes \n\n Mode: Full Automatique" 12 78
-sudo python -m pip install --upgrade google-assistant-sdk[samples]
+python -m pip install --upgrade google-assistant-sdk[samples]
 clear
 sudo python -m pip install --upgrade google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
 clear
