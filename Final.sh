@@ -42,11 +42,11 @@ sudo apt-get install portaudio19-dev libffi-dev libssl-dev -y
 clear
 whiptail --title "ETAPE 5" --msgbox "Téléchargement + installation de python \n---------------------------------------\n\n Information: Terminer \n\n Vous pouvez passer à l'étape 5" 12 78
 whiptail --title "ETAPE 6" --msgbox "Installation de google assistance\n---------------------------------\n\n Temps: 10 et 25 minutes \n\n Mode: Full Automatique" 12 78
-python -m pip install --upgrade google-assistant-sdk[samples]
+sudo python -m pip install --upgrade google-assistant-sdk[samples]
 clear
-python -m pip install --upgrade google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
+sudo python -m pip install --upgrade google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
 clear
-python -m pip install --upgrade google-auth-oauthlib[tool]
+sudo python -m pip install --upgrade google-auth-oauthlib[tool]
 clear
 whiptail --title "ETAPE 6" --msgbox "Installation de google assistance\n---------------------------------\n\n Information: TERMINER \n\n Vous pouvez passer à la dernière étape" 12 78
 whiptail --title "ETAPE 7" --msgbox "Activation du service + code d'access\n---------------------------------\n\n Temps: 5 et 10 minutes \n\n Mode: Full Manuel" 12 78
