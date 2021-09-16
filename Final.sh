@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 if (whiptail --title "Téléchargement des outils" --msgbox "Avant de commencer l'installation, le logiciel va télécharger les outils.\n \n\n Temps: entre 1 et 2min \n\n Mode: Full automatique" 12 78) then 
 wget https://github.com/googlesamples/assistant-sdk-python/releases/download/0.6.0/google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
 clear
