@@ -53,8 +53,9 @@ whiptail --title "ETAPE 7" --msgbox "Activation du service + code d'access\n----
 clear
 whiptail --title "ETAPE 8 FINAL" --msgbox "Mise en place du lancement automatique\n------------------------------------\n\n 1. sourligner les 2 phrases \n\n source env/bin/activate \n google-assistant-demo --device-model-id my-device-model \n\n faite OK\n RDV en bas de la fenêtre et faites click Droit\n Puis CTRL+X --> ENTER" 17 78
 clear
+nano /home/pi/.bashrc
 whiptail --title "Félicitation" --msgbox "L'installation de google assitance est TERMINER\n---------------------------------\n\n Félicitation, le software est correctement installé \n\n il reste plus qu'à faire OK et attendre le restart." 12 78
 whiptail --title "== SCRIPT DE WORLD-TECK STUDIO ==" --msgbox "Merci d'avoir suivi le tuto\n\n Retrouvez moi sur \n YOUTUBE: world-teck STUDIO \n TWITCH: WorldTeck_studio_ ==" 12 78
 clear
-sudo restart
+sudo reboot
 fi
