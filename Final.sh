@@ -46,9 +46,9 @@ whiptail --title "ETAPE 5" --msgbox "Téléchargement + installation de python \
 whiptail --title "ETAPE 6" --msgbox "Installation de google assistance\n---------------------------------\n\n Temps: 10 et 25 minutes \n\n Mode: Full Automatique" 12 78
 python -m pip install --upgrade google-assistant-sdk[samples]
 clear
-sudo python -m pip install --upgrade google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
+python -m pip install --upgrade google_assistant_library-1.1.0-py2.py3-none-linux_armv7l.whl
 clear
-sudo python -m pip install --upgrade google-auth-oauthlib[tool]
+python -m pip install --upgrade google-auth-oauthlib[tool]
 clear
 whiptail --title "ETAPE 6" --msgbox "Installation de google assistance\n---------------------------------\n\n Information: TERMINER \n\n Vous pouvez passer à la dernière étape" 12 78
 whiptail --title "ETAPE 7" --msgbox "Activation du service + code d'access\n---------------------------------\n\n Temps: 5 et 10 minutes \n\n Mode: Full Manuel" 12 78
