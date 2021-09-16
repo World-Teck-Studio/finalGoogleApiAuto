@@ -20,8 +20,7 @@ whiptail --title "ETAPE 2" --msgbox "Vérification de la mise à jour de votre l
 sudo apt-get update -y && sudo apt-get upgrade -y
 clear
 whiptail --title "ETAPE 2" --msgbox "Vérification de la mise à jour de votre logiciel \n------------------------------------------------\n\n Information: TERMINER \n\n Vous pouvez passer à l'étape 3" 12 78
-whiptail --title "ETAPE 3" --msgbox "Veuillez branché votre mico + le haut parleur sur le raspberry \n--------------------------------------------------------------\n\n ATTENTION: je vous conseille un ensemble en USB\n\n Temps: Aucun \n\n Mode: Full Manuel" 12 78
-whiptail --title "ETAPE 3" --msgbox "Félicitation, vous avez terminé l'étape 3 \n\n Nous pouvons passer à l'étape 4" 10 78
+whiptail --title "ETAPE 3" --msgbox "Veuillez branché votre mico + le haut parleur sur le raspberry \n--------------------------------------------------------------\n\n ATTENTION: je vous conseille un ensemble en USB\n\n Temps: Aucun \n\n Mode: Full Manuel" 14 78
 whiptail --title "ETAPE 3" --msgbox "Préparer de quoi noté\n---------------------\n\n -le numéro de la card \n -le numero du device \n\n ATTENTION: vous avez 10 sec pour noter" 16 78
 sudo arecord -l
 sleep "2"
@@ -29,7 +28,7 @@ echo "il vous reste 10 sec pour touvé le numero de la card et device."
 sleep "10"
 clear
 whiptail --title "ETAPE 3" --msgbox "Félicitation, vous avez terminé l'étape 3 \n\n Nous pouvons passer à l'étape 4" 10 78
-whiptail --title "ETAPE 4" --msgbox "Configuration du fichier audio\n------------------------------\n\n 1.préparer le numero de votre device \n 2.Préparer le numero de votre card \n\n ATTENTION: une fois le fichier modifié faites CTRL Gauche + X puis ENTER" 10 78
+whiptail --title "ETAPE 4" --msgbox "Configuration du fichier audio\n------------------------------\n\n 1.préparer le numero de votre device \n 2.Préparer le numero de votre card \n\n ATTENTION: une fois le fichier modifié faites CTRL Gauche + X puis ENTER" 14 78
 sudo nano .asoundrc
 clear
 whiptail --title "ETAPE 4" --msgbox "Félicitation, vous avez terminé l'étape 4 \n\n Nous pouvons passer à l'étape 5" 10 78
