@@ -27,6 +27,7 @@ sudo arecord -l
 sleep "2"
 echo "il vous reste 10 sec pour touvé le numero de la card et device."
 sleep "10"
+clear
 whiptail --title "ETAPE 3" --msgbox "Félicitation, vous avez terminé l'étape 3 \n\n Nous pouvons passer à l'étape 4" 10 78
 whiptail --title "ETAPE 4" --msgbox "Configuration du fichier audio\n------------------------------\n\n 1.préparer le numero de votre device \n 2.Préparer le numero de votre card \n\n ATTENTION: une fois le fichier modifié faites CTRL Gauche + X puis ENTER" 10 78
 sudo nano .asoundrc
